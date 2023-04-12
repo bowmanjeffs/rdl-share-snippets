@@ -1,7 +1,7 @@
 #!/bin/sh
 # Some nice variables
-targetemail="anemail@ucsd.edu"
-api_key="youneedakey"
+targetemail="someemail@ucsd.edu"
+api_key="somekey"
 server="rdl-share.ucsd.edu"
 current_date=$(date -v +7d +%Y-%m-%d)
 
