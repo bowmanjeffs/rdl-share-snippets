@@ -28,7 +28,7 @@ attachment_id=`curl -X POST --user "$api_key:x" -H "Accept: application/json" \
 echo $attachment_id
 
 # Attach the file to a message in the inbox
-cat <<EOF | curl -k -X POST -H "Content-Type: application/json" --user "$api_key:x" -d @- https://${server}/message
+cat <<EOF | curl -k -X POST -H "Accept: application/json" -H "Content-Type: application/json" --user "$api_key:x" -d @- https://${server}/message
 {"message":
  {
   "recipients":["$targetemail"],
