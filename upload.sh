@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 # Some nice variables
 targetemail="someemail@ucsd.edu"
 api_key="somekey"
 server="rdl-share.ucsd.edu"
-current_date=$(date -v +7d +%Y-%m-%d)
+current_date=$(date)
 
 fullpath=$1
 filename=`basename ${fullpath}`
